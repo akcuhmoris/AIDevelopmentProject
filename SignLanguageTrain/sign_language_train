@@ -4,9 +4,9 @@ sys.path.append('/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.
 import cv2 as cv
 import numpy as np
 
-face_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_frontalface_default.xml')
-upperbody_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_upperbody.xml')
-hand_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/hand.xml')
+face_cascade = cv.CascadeClassifier('/Users/coolnipunj/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_frontalface_default.xml')
+upperbody_cascade = cv.CascadeClassifier('/Users/coolnipunj/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_upperbody.xml')
+hand_cascade = cv.CascadeClassifier('/Users/coolnipunj/AIDevelopmentProject/Haar Cascades/BodyParts/hand.xml')
 
 cap = cv.VideoCapture(0)
 

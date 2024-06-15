@@ -3,3 +3,46 @@ import sys
 sys.path.append('/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages')
 import cv2 as cv
 import numpy as np
+
+face_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_frontalface_default.xml')
+upperbody_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/haarcascade_upperbody.xml')
+hand_cascade = cv.CascadeClassifier('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/Haar Cascades/BodyParts/hand.xml')
+
+cap = cv.VideoCapture(0)
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+    
+    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+
+    # Detect faces
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+    # Detect upper body
+    upperbodies = upperbody_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
+    # Detect hands
+    hands = hand_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(24, 24))
+
+    # Draw rectangles around detected regions
+    for (x, y, w, h) in faces:
+        cv.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv.putText(frame, 'Face', (x, y-10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+
+    for (x, y, w, h) in upperbodies:
+        cv.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv.putText(frame, 'Upper Body', (x, y-10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+
+    for (x, y, w, h) in hands:
+        cv.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
+        cv.putText(frame, 'Hand', (x, y-10), cv.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+
+    cv.imshow('Hand Gesture Detection', frame)
+
+    if cv.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv.destroyAllWindows()

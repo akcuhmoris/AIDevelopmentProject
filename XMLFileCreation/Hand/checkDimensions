@@ -1,0 +1,9 @@
+import cv2
+
+# Load the image
+image = cv2.imread('/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Hand/PositiveImages/images (11).jpeg')
+
+# Get the dimensions
+height, width, channels = image.shape
+
+print(f'Width: {width}, Height: {height}')

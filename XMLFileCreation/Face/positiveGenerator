@@ -5,7 +5,7 @@ def parse_annotation(xml_file):
     tree = ET.parse(xml_file)
     root = tree.getroot()
     objects = []
-    for obj in root.findall('face'):
+    for obj in root.findall('object'):  # Ensure the correct XML tag is used
         bbox = obj.find('bndbox')
         x1 = int(bbox.find('xmin').text)
         y1 = int(bbox.find('ymin').text)
@@ -20,15 +20,25 @@ def generate_positives_file(image_dir, annotations_dir, output_file):
     with open(output_file, 'w') as file:
         for annotation_file in os.listdir(annotations_dir):
             if annotation_file.endswith('.xml'):
-                image_file = annotation_file.replace('.xml', '.jpg')  # Adjust if your images have a different extension
+                image_file = annotation_file.replace('.xml', '.jpeg')  # Adjust if your images have a different extension
                 image_path = os.path.join(image_dir, image_file)
                 annotation_path = os.path.join(annotations_dir, annotation_file)
+                
+                print(f"Processing annotation: {annotation_path}")
+                
                 if os.path.isfile(image_path):
                     objects = parse_annotation(annotation_path)
+                    
+                    print(f"Found {len(objects)} objects in {annotation_path}")
+                    
                     line = f"{image_path} {len(objects)}"
                     for obj in objects:
                         line += f" {obj[0]} {obj[1]} {obj[2]} {obj[3]}"
+                    
+                    print(f"Writing line: {line}")
                     file.write(line + "\n")
+                else:
+                    print(f"Image file not found: {image_path}")
 
 # Set your directory paths here
 image_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces'

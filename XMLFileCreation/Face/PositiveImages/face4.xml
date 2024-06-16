@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Faces</folder>
+	<filename>face4.jpeg</filename>
+	<path>/Users/coolnipunj/Downloads/Faces/face4.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>200</width>
+		<height>252</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>face</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>29</xmin>
+			<ymin>7</ymin>
+			<xmax>179</xmax>
+			<ymax>211</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,34 @@
+import os
+import xml.etree.ElementTree as ET
+
+def convert_voc_to_txt(xml_folder, output_file, image_folder):
+    with open(output_file, 'w') as f:
+        for xml_file in os.listdir(xml_folder):
+            if xml_file.endswith('.xml'):
+                tree = ET.parse(os.path.join(xml_folder, xml_file))
+                root = tree.getroot()
+                
+                img_filename = root.find('filename').text
+                img_path = os.path.join(image_folder, img_filename)
+                num_objects = len(root.findall('object'))
+                
+                line = f"{img_path} {num_objects}"
+                
+                for obj in root.findall('object'):
+                    bbox = obj.find('bndbox')
+                    xmin = int(bbox.find('xmin').text)
+                    ymin = int(bbox.find('ymin').text)
+                    xmax = int(bbox.find('xmax').text)
+                    ymax = int(bbox.find('ymax').text)
+                    width = xmax - xmin
+                    height = ymax - ymin
+                    line += f" {xmin} {ymin} {width} {height}"
+                
+                f.write(line + '\n')
+
+# Example usage
+xml_folder = '/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Hand/PositiveImages'  # Folder containing XML files
+image_folder = '/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Hand/PositiveImages'  # Folder containing images
+output_file = 'positives.txt'  # Output file
+
+convert_voc_to_txt(xml_folder, output_file, image_folder)

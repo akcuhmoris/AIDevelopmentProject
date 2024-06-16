@@ -1,26 +1,26 @@
 <annotation>
 	<folder>Faces</folder>
-	<filename>face12.jpeg</filename>
-	<path>/Users/coolnipunj/Downloads/Faces/face12.jpeg</path>
+	<filename>face19.jpeg</filename>
+	<path>/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face19.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>259</width>
-		<height>194</height>
+		<width>194</width>
+		<height>259</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
 	<object>
 		<name>face</name>
 		<pose>Unspecified</pose>
-		<truncated>1</truncated>
+		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>51</xmin>
-			<ymin>1</ymin>
-			<xmax>222</xmax>
-			<ymax>163</ymax>
+			<xmin>24</xmin>
+			<ymin>10</ymin>
+			<xmax>182</xmax>
+			<ymax>219</ymax>
 		</bndbox>
 	</object>
 </annotation>

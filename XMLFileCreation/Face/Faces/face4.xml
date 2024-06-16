@@ -1,13 +1,13 @@
 <annotation>
 	<folder>Faces</folder>
-	<filename>face1.jpeg</filename>
-	<path>/Users/coolnipunj/Downloads/Faces/face1.jpeg</path>
+	<filename>face4.jpeg</filename>
+	<path>/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face4.jpeg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>210</width>
-		<height>240</height>
+		<width>200</width>
+		<height>252</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>13</xmin>
-			<ymin>12</ymin>
-			<xmax>198</xmax>
-			<ymax>236</ymax>
+			<xmin>29</xmin>
+			<ymin>7</ymin>
+			<xmax>179</xmax>
+			<ymax>211</ymax>
 		</bndbox>
 	</object>
 </annotation>

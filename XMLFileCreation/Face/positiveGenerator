@@ -31,9 +31,9 @@ def generate_positives_file(image_dir, annotations_dir, output_file):
                     file.write(line + "\n")
 
 # Set your directory paths here
-image_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/PositiveImages'
-annotations_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/PositiveImages'
-output_file_path = 'positivesFace.txt'
+image_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces'
+annotations_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces'
+output_file_path = 'positives.txt'
 
 generate_positives_file(image_directory, annotations_directory, output_file_path)
 

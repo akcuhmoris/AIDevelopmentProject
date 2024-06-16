@@ -1,0 +1,26 @@
+<annotation>
+	<folder>PositiveImages</folder>
+	<filename>images (4).jpeg</filename>
+	<path>/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Hand/PositiveImages/images (4).jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>242</width>
+		<height>208</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>object</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>15</ymin>
+			<xmax>220</xmax>
+			<ymax>207</ymax>
+		</bndbox>
+	</object>
+</annotation>

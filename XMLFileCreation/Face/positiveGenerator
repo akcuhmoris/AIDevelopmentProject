@@ -41,8 +41,8 @@ def generate_positives_file(image_dir, annotations_dir, output_file):
                     print(f"Image file not found: {image_path}")
 
 # Set your directory paths here
-image_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces'
-annotations_directory = '/Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces'
+image_directory = '/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces'
+annotations_directory = '/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces'
 output_file_path = 'positives.txt'
 
 generate_positives_file(image_directory, annotations_directory, output_file_path)

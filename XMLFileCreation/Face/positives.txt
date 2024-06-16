@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face11.jpeg 1 78 1 152 162
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face10.jpeg 1 35 14 120 171
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face12.jpeg 1 51 1 171 162
@@ -17,3 +18,24 @@
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face5.jpeg 1 92 29 163 240
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face19.jpeg 1 24 10 158 209
 /Users/coolnipunj/AIDevelopmentProject/XMLFileCreation/Face/Faces/face20.jpeg 1 20 3 161 223
+=======
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face11.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face10.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face12.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face13.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face17.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face16.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face14.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face15.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face8.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face9.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face1.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face2.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face3.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face7.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face6.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face4.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face5.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face19.jpeg 0
+/Users/akhilmoris/Desktop/CollegeProjects/AIDevelopmentProject/XMLFileCreation/Face/Faces/face20.jpeg 0
+>>>>>>> Stashed changes

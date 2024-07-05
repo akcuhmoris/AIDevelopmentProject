@@ -3,6 +3,7 @@ sys.path.append('/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.
 import cv2 as cv
 import numpy as np
 
+
 blank = np.zeros((500,500,3),dtype='uint8')
 cv.imshow('Blank',blank)
 
